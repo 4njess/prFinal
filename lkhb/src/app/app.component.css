@@ -1,0 +1,18 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+.sections{
+  display: flex;
+}
+summary::marker {
+  content: "";
+}
+
+details {
+  margin-bottom: -30px;
+}
+
+details[open] {
+  margin-bottom: 0px;
+  margin: 0;
+}

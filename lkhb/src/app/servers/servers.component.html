@@ -1,0 +1,17 @@
+<div>
+  <div class="values" *ngFor="let item of servers; let key = index">
+    <p>{{key}}:</p>
+      <div class="values">
+        <p>ConnectionUrl: {{item.ConnectionUrl}}</p>
+        <p>Id: {{item.Id}}</p>
+        <p>Name: {{item.Name}}</p>
+        <p>PrimaryIp: {{item.PrimaryIp}}</p>
+        <p>PrimaryPort: {{item.PrimaryPort}}</p>
+        <p>PrimarySslPort: {{item.PrimarySslPort}}</p>
+        <p>SecondaryIp: {{item.SecondaryIp}}</p>
+        <p>SecondaryPort: {{item.SecondaryPort}}</p>
+        <p>SecondarySslPort: {{item.SecondarySslPort}}</p>
+        <p>Url: {{item.Url}}</p>
+      </div>
+  </div>
+</div>

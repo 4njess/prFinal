@@ -1,0 +1,46 @@
+<div class="values">
+  <p>CanAccessArchiveMarks: {{userGroup.CanAccessArchiveMarks}}</p>
+  <p>CanAccessEditingAnalystPluginsInClient: {{userGroup.CanAccessEditingAnalystPluginsInClient}}</p>
+  <p>CanAccessExpertMode: {{userGroup.CanAccessExpertMode}}</p>
+  <p>CanAccessGis: {{userGroup.CanAccessGis}}</p>
+  <p>CanAccessNewCamera: {{userGroup.CanAccessNewCamera}}</p>
+  <p>CanAccessPlans: {{userGroup.CanAccessPlans}}</p>
+  <p>CanAccessReports: {{userGroup.CanAccessReports}}</p>
+  <p>CanAccessSearch: {{userGroup.CanAccessSearch}}</p>
+  <p>CanAccessToAllUsersInUnifiedLog: {{userGroup.CanAccessToAllUsersInUnifiedLog}}</p>
+  <p>CanAccessUnifiedLog: {{userGroup.CanAccessUnifiedLog}}</p>
+  <p>CanAccessVideoViaSmartTV: {{userGroup.CanAccessVideoViaSmartTV}}</p>
+  <p>CanAccessVideoViaWeb: {{userGroup.CanAccessVideoViaWeb}}</p>
+  <p>CanBrowsingVideowall: {{userGroup.CanBrowsingVideowall}}</p>
+  <p>CanChangeChannelMode: {{userGroup.CanChangeChannelMode}}</p>
+  <p>CanChangePassword: {{userGroup.CanChangePassword}}</p>
+  <p>CanConfigure: {{userGroup.CanConfigure}}</p>
+  <p>CanConfigureVideowall: {{userGroup.CanConfigureVideowall}}</p>
+  <p>CanConfigureWorkplace: {{userGroup.CanConfigureWorkplace}}</p>
+  <p>CanExportVideoToAvi: {{userGroup.CanExportVideoToAvi}}</p>
+  <p>CanGetTranscodedVideoFromMobileServer: {{userGroup.CanGetTranscodedVideoFromMobileServer}}</p>
+  <p>CanManageRec: {{userGroup.CanManageRec}}</p>
+  <p>CanPTZ: {{userGroup.CanPTZ}}</p>
+  <p>CanReceiveMainStream: {{userGroup.CanReceiveMainStream}}</p>
+  <p>CanReceiveMobilePush: {{userGroup.CanReceiveMobilePush}}</p>
+  <p>CanReceiveSound: {{userGroup.CanReceiveSound}}</p>
+  <p>CanRunUserScenarios: {{userGroup.CanRunUserScenarios}}</p>
+  <p>CanShutdown: {{userGroup.CanShutdown}}</p>
+  <p>CanTransmitSound: {{userGroup.CanTransmitSound}}</p>
+  <p>CanUseArchiveExport: {{userGroup.CanUseArchiveExport}}</p>
+  <p>Comment: {{userGroup.Comment}}</p>
+  <details>
+    <summary class="insideHeader">
+      <p>[ GridTypesAllowed ]:</p>
+    </summary>
+    <div class="values" *ngFor="let item of userGroup.GridTypesAllowed; let key = index">
+      <p>{{key}}: {{item}}</p>
+    </div>
+  </details>
+  <p>Id: {{userGroup.Id}}</p>
+  <p>IsAllForbidden: {{userGroup.IsAllForbidden}}</p>
+  <p>MessengerCanReceiveMessages: {{userGroup.MessengerCanReceiveMessages}}</p>
+  <p>MessengerCanSendMessages: {{userGroup.MessengerCanSendMessages}}</p>
+  <p>Name: {{userGroup.Name}}</p>
+  <p>PtzPriority: {{userGroup.PtzPriority}}</p>
+</div>

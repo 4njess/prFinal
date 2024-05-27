@@ -1,0 +1,24 @@
+<div class="values">
+    <details>
+      <summary><p>[ChildChannels]:</p></summary>
+      <div class="values" *ngFor="let item of secObj.ChildChannels; let key = index">
+        <p>{{key}}</p>
+      </div>
+    </details>
+    <details>
+    <summary><p>[ChildSecObjects]:</p></summary>
+      <div class="values" *ngFor="let item of secObj.ChildSecObjects; let key = index">
+        <p>{{key}}:</p>
+          <div class="values" *ngFor="let item2 of item.ChildChannels; let key = index">
+            <p>{{key}} - {{item2}} </p>
+          </div>
+          <div class="values" *ngFor="let item2 of item.ChildSecObjects; let key = index">
+            <p>{{key}}</p>
+          </div>
+          <p>Id: {{item.Id}}</p>
+          <p>Name: {{item.Name}}</p>
+      </div>
+    </details>
+    <p>Id: {{secObj.Id}}</p>
+    <p>Name: {{secObj.Name}}</p>
+</div>

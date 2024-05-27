@@ -1,0 +1,21 @@
+summary::marker {
+  content: "";
+}
+
+summary {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+details {
+  margin-bottom: -20px;
+}
+
+details[open] {
+  margin-bottom: 0px;
+  margin: 0;
+}
+
+.values {
+  margin-left: 2%;
+}

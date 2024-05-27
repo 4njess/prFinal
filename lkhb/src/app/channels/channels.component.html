@@ -1,0 +1,55 @@
+<details>
+  <summary class="values">
+    <p class="Header">[Channels]:<p>
+  </summary>
+  <div>
+    <div class="values" *ngFor="let item of channels; let key = index">
+      <h4>{{key}}:</h4>
+      <div class="values">
+        <p>AllowedArchive: {{item.AllowedArchive}}</p>
+        <p>AllowedRealtime: {{item.AllowedRealtime}}</p>
+        <p>ArchiveMode: {{item.ArchiveMode}}</p>
+        <p>ArchiveRotationMode: {{item.ArchiveRotationMode}}</p>
+        <p>ArchiveStreamType: {{item.ArchiveStreamType}}</p>
+        <p>ArchiveVideoFormat: {{item.ArchiveVideoFormat}}</p>
+        <p>AttachedToServer: {{item.AttachedToServer}}</p>
+        <p>Description: {{item.Description}}</p>
+        <p>DeviceInfo: {{item.DeviceInfo}}</p>
+        <p>GeoPosition: {{item.GeoPosition}}</p>
+        <p>Id: {{item.Id}}</p>
+        <p>IsArchivingEnabled: {{item.IsArchivingEnabled}}</p>
+        <p>IsDisabled: {{item.IsDisabled}}</p>
+        <p>IsFaceRecOn: {{item.IsFaceRecOn}}</p>
+        <p>IsObjectCountingOn: {{item.IsObjectCountingOn}}</p>
+        <p>IsPeopleCountingOn: {{item.IsPeopleCountingOn}}</p>
+        <p>IsPtzOn: {{item.IsPtzOn}}</p>
+        <p>IsSoundArchivingEnabled: {{item.IsSoundArchivingEnabled}}</p>
+        <p>IsSoundOn: {{item.IsSoundOn}}</p>
+        <p>IsTransmitSoundOn: {{item.IsTransmitSoundOn}}</p>
+        <p>Name: {{item.Name}}</p>
+        <details>
+          <summary class="insideHeader">
+            <p>[ Streams ]:</p>
+          </summary>
+          <div class="values" *ngFor="let item of item.Streams; let key = index">
+            <p>{{key}}:</p>
+            <div class="values">
+              <p>RotationMode: {{item.RotationMode}}</p>
+              <p>StreamFormat: {{item.StreamFormat}}</p>
+              <p>StreamType: {{item.StreamType}}</p>
+            </div>
+          </div>
+        </details>
+        <p>TimeZoneOffset: {{item.TimeZoneOffset}}</p>
+        <details>
+          <summary class="insideHeader">
+            <p>[ UserScenarios ]:</p>
+          </summary>
+          <div class="values" *ngFor="let item of item.UserScenarios; let key = index">
+            <p>{{key}}: {{item}}</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</details>

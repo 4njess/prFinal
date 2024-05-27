@@ -1,0 +1,26 @@
+<div class="values">
+<p>FpsLimit: {{serverInfo.FpsLimit}}</p>
+<p>HighResolution: {{serverInfo.HighResolution}}</p>
+<p>IsEnabled: {{serverInfo.IsEnabled}}</p>
+<p>IsMobilePushEnabled: {{serverInfo.IsMobilePushEnabled}}</p>
+<p>IsProxyEnabled: {{serverInfo.IsProxyEnabled}}</p>
+<p>LowResolution: {{serverInfo.LowResolution}}</p>
+<p>MiddleResolution: {{serverInfo.MiddleResolution}}</p>
+<details>
+  <summary class="insideHeader">
+    <p>[ Resolutions ]:</p>
+  </summary>
+  <div class="values" *ngFor="let item of serverInfo.Resolutions; let key = index">
+    <p>{{key}}:</p>
+    <div class="values">
+      <p>FpsLimit: {{item.FpsLimit}}</p>
+      <p>Height: {{item.Height}}</p>
+      <p>IsEnabled: {{item.IsEnabled}}</p>
+      <p>Type: {{item.Type}}</p>
+      <p>UsePFrames: {{item.UsePFrames}}</p>
+      <p>Width: {{item.Width }}</p>
+    </div>
+  </div>
+</details>
+<p>UsePFrames: {{serverInfo.UsePFrames}}</p>
+</div>
